@@ -1212,11 +1212,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Javier Rivera\\source\\repos\\WebApiBlazor\\WebApiBlazor\\WebApiBlazor.csproj",
+      "projectUniqueName": "C:\\Users\\Javier Rivera\\OneDrive\\Desktop\\webapiBlazor\\WebApiBlazor\\WebApiBlazor\\WebApiBlazor.csproj",
       "projectName": "WebApiBlazor",
-      "projectPath": "C:\\Users\\Javier Rivera\\source\\repos\\WebApiBlazor\\WebApiBlazor\\WebApiBlazor.csproj",
+      "projectPath": "C:\\Users\\Javier Rivera\\OneDrive\\Desktop\\webapiBlazor\\WebApiBlazor\\WebApiBlazor\\WebApiBlazor.csproj",
       "packagesPath": "C:\\Users\\Javier Rivera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Javier Rivera\\source\\repos\\WebApiBlazor\\WebApiBlazor\\obj\\",
+      "outputPath": "C:\\Users\\Javier Rivera\\OneDrive\\Desktop\\webapiBlazor\\WebApiBlazor\\WebApiBlazor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

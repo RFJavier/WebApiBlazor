@@ -13,77 +13,77 @@ namespace WebApiBlazor.Shared
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 1 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 2 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 3 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 4 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 5 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 6 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 7 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 8 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 9 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using WebApiBlazor;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 10 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using WebApiBlazor.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\_Imports.razor"
+#line 11 "C:\Users\Javier Rivera\OneDrive\Desktop\webapiBlazor\WebApiBlazor\WebApiBlazor\_Imports.razor"
 using MudBlazor;
 
 #line default
@@ -96,21 +96,6 @@ using MudBlazor;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 28 "C:\Users\Javier Rivera\source\repos\WebApiBlazor\WebApiBlazor\Shared\NavMenu.razor"
-       
-    private bool collapseNavMenu = true;
-
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-
-#line default
-#line hidden
-#nullable disable
     }
 }
 #pragma warning restore 1591
