@@ -1,0 +1,37 @@
+﻿@page "/horarios"
+@using Models
+@using Services
+@inject IHorarioService HorarioService
+
+<MudText Typo="Typo.h3">Horarios</MudText>
+@foreach (var item in medi)
+{
+    <MudItem xs="12" sm="10" md="6" lg="4">
+        <MudCardHeader Class="blue darkness-1">
+            <CardHeaderContent>
+                <MudText Typo="Typo.h5">@item.Id</MudText>
+            </CardHeaderContent>
+        </MudCardHeader>
+        <MudCardContent>
+            <MudText>@item.idMedico</MudText>
+            <br />
+            <MudText>@item.Entrada</MudText>
+            <br />
+            <MudText>@item.Salida</MudText>
+        </MudCardContent>
+
+        <MudCardActions>
+            <MudButton Variant="Variant.Text" Color="Color.Primary">Detalles</MudButton>
+        </MudCardActions>
+    </MudItem>
+}
+
+@code {
+
+    IEnumerable<Horario> medi = new List<Horario>();
+    protected override async Task OnInitializedAsync()
+    {
+        medi = await HorarioService.GetAll();
+    }
+
+}

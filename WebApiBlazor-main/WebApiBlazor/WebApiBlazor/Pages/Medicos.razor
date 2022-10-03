@@ -1,0 +1,38 @@
+﻿@page "/medicos"
+@using Models
+@using Services
+@inject IMedicoService MedicoService
+
+
+<MudText Typo="Typo.h3">Lista de Medicos</MudText>
+
+<MudGrid>
+    @foreach (var item in medi)
+    {
+        <MudItem xs="12" sm="10" md="6" lg="4">
+            <MudCardHeader Class="blue darkness-1">
+                <CardHeaderContent>
+                    <MudText Typo="Typo.h5">@item.Nombre</MudText>
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardContent>
+                <MudText>@item.Especialidad</MudText>
+                <br />
+                <MudText>@item.Telefono</MudText>
+            </MudCardContent>
+
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Detalles</MudButton>
+            </MudCardActions>
+        </MudItem>
+    }
+</MudGrid>
+
+
+@code {
+    IEnumerable<Medico> medi = new List<Medico>();
+    protected override async Task OnInitializedAsync()
+    {
+        medi = await MedicoService.GetAll();
+    }
+}

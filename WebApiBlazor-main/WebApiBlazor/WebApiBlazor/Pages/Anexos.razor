@@ -1,0 +1,38 @@
+﻿@page "/anexos"
+@using Models
+@using Services
+@inject IAnexoService AnexoService
+
+
+<MudText Typo="Typo.h3">Anexos</MudText>
+
+<MudGrid>
+    @foreach (var item in anex)
+    {
+        <MudItem xs="12" sm="10" md="6" lg="4">
+            <MudCard>
+                <MudCardHeader Class="blue darkness-1">
+                    <CardHeaderContent>
+                        <MudText Typo="Typo.h5">@item.Id</MudText>
+                        
+                    </CardHeaderContent>
+                </MudCardHeader>
+                <MudCardContent>
+                    <MudText>@item.Idpaciente</MudText>
+                    <br />
+                    <MudText>@item.Anexos</MudText>
+                </MudCardContent>
+                
+            </MudCard>
+        </MudItem>
+    }
+</MudGrid>
+
+
+@code {
+    IEnumerable<Anexo> anex = new List<Anexo>();
+    protected override async Task OnInitializedAsync()
+    {
+        anex = await AnexoService.GetAll();
+    }
+}

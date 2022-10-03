@@ -1,0 +1,39 @@
+﻿@page "/examenes"
+@using Models
+@using Services
+@inject IExamenService ExamenService
+
+
+<MudText Typo="Typo.h3">Examenes</MudText>
+
+<MudGrid>
+    @foreach (var item in exam)
+    {
+    <MudItem xs="12" sm="10" md="6" lg="4">
+        <MudCardHeader Class="blue darkness-1">
+            <CardHeaderContent>
+                <MudText Typo="Typo.h5">@item.Id</MudText>
+       
+            </CardHeaderContent>
+        </MudCardHeader>
+        <MudCardContent>
+            <MudText>@item.Examenes</MudText>
+    
+        </MudCardContent>
+
+        <MudCardActions>
+            <MudButton Variant="Variant.Text" Color="Color.Primary">Detalles</MudButton>
+        </MudCardActions>
+    </MudItem>
+    }
+</MudGrid>
+
+
+@code {
+    IEnumerable<Examen> exam = new List<Examen>();
+    protected override async Task OnInitializedAsync()
+    {
+        exam = await ExamenService.GetAll();
+    }
+
+}

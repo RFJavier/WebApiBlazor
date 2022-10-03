@@ -1,0 +1,55 @@
+﻿@page "/pacientes"
+@using Models
+@using Services
+@inject IPacienteService PacienteService
+
+
+<MudText Typo="Typo.h3">Pacientes</MudText>
+
+
+<MudGrid>
+    @foreach (var item in medi)
+    {
+        <MudItem xs="12" sm="10" md="6" lg="4">
+            <MudCardHeader Class="blue darkness-1">
+                <CardHeaderContent>
+                    <MudText Typo="Typo.h5">@item.Id</MudText>
+                    <br />
+                    <MudText Typo="Typo.h5">@item.IdMedico</MudText>
+                    <br />
+                    <MudText Typo="Typo.h5">@item.IdExamen</MudText>
+                    <br />
+                    <MudText Typo="Typo.h5">@item.IdAnexo</MudText>
+                    <br />
+
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardContent>
+       
+                <MudText>@item.Nombre</MudText>
+                <br />
+                <MudText>@item.Edad</MudText>
+                <br />
+                <MudText>@item.Telefono</MudText>
+                <br />
+                <MudText>@item.FechaNacimiento</MudText>
+                <br />
+                <MudText>@item.Genero</MudText>
+            </MudCardContent>
+
+            <MudCardActions>
+                <MudButton Variant="Variant.Text" Color="Color.Primary">Detalles</MudButton>
+            </MudCardActions>
+        </MudItem>
+    }
+</MudGrid>
+
+
+@code {
+    IEnumerable<Paciente> medi = new List<Paciente>();
+    protected override async Task OnInitializedAsync()
+    {
+        medi = await PacienteService.GetAll();
+    }
+
+}
